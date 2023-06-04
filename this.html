@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // let a = this;
+    // console.log(a)
+
+    // this.name = "Tanmay";
+    // console.log(window.name)
+
+    // const names = {
+    //     name: "Tanmay",
+    //     quali: "MCA",
+
+    //     sum: function(){
+    //         var add = 2+2;
+    //         console.log(add)
+    //         console.log(this.name)
+    //     }
+    // }
+
+    // names.sum();
+
+    // function name(params) {
+    //     function Person(){
+    //         this.name = "Tanmay";
+    //         console.log(this);
+    //     }
+    
+    //     let person1 = new Person();
+    //     console.log(person1.name)
+    // }
+
+    const person = {
+        name : "Tanmay",
+        age : 24,
+
+        greet(){
+            console.log(this);
+            console.log(this.age)
+
+            let innerFunc = () => {
+                console.log(this)
+                console.log(this.name)
+            }
+            innerFunc()
+        }
+    }
+    person.greet()
+</script>
+</html>
